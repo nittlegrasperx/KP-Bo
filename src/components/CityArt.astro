@@ -1,0 +1,11 @@
+---
+const {variant='hero'}=Astro.props;
+---
+<svg viewBox="0 0 1000 760" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Abstract architectural city study" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop stop-color={variant==='hero'?'#e6eae2':'#d9e1d7'}/><stop offset="1" stop-color="#b9c7b6"/></linearGradient><linearGradient id="front" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4f4ed"/><stop offset="1" stop-color="#aab8a9"/></linearGradient></defs>
+<rect width="1000" height="760" fill="url(#sky)"/><g opacity=".17" stroke="#5c6d60" stroke-width="1">{Array.from({length:21},(_,i)=><line x1={i*50} x2={i*50} y1="0" y2="760"/>)}{Array.from({length:17},(_,i)=><line y1={i*50} y2={i*50} x1="0" x2="1000"/>)}</g>
+<path d="M0 630 L360 450 760 600 1000 480 1000 760 0 760Z" fill="#a2b2a0" opacity=".48"/>
+<g stroke="#718474" stroke-width="1.4"><path d="M180 310L460 160 690 275 410 430Z" fill="#d7dfd2"/><path d="M180 310L410 430V715L180 590Z" fill="#a9b9a9"/><path d="M410 430L690 275V550L410 715Z" fill="url(#front)"/><path d="M490 260L610 196 765 280 644 346Z" fill="#edf0e9"/><path d="M644 346L765 280V515L644 585Z" fill="#c3cec0"/><path d="M490 260L644 346V585L490 497Z" fill="#a7b9a8"/></g>
+<g fill="none" stroke="#7b907c" stroke-width="1.2" opacity=".75">{Array.from({length:8},(_,i)=><path d={`M${208+i*26} ${326+i*14}v285`}/>)}{Array.from({length:8},(_,i)=><path d={`M${425+i*30} ${420-i*16}v280`}/>)}{Array.from({length:7},(_,i)=><path d={`M490 ${292+i*32}l154 86`}/>)}{Array.from({length:7},(_,i)=><path d={`M644 ${375+i*29}l121 -66`}/>)}</g>
+<g stroke="#f7f8f1" fill="none" opacity=".65"><path d="M75 670L415 480 890 700"/><circle cx="795" cy="146" r="84" stroke-dasharray="3 9"/><path d="M795 35v222M685 146h220"/></g><text x="44" y="715" fill="#536955" font-family="monospace" font-size="13" letter-spacing="3">SPATIAL STUDY / 001</text>
+</svg>
