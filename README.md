@@ -60,3 +60,10 @@ Use matching filenames in `/en/` and `/th/` to create translated articles. Each 
 - Replace `site` with your deployed domain.
 
 All illustrative architecture graphics are generated with inline SVG and require no external asset license. Google Fonts are used for typography; you can self-host alternatives if desired.
+
+
+## V3 / CMS
+- Text-free hero image: public/images/city-hero.webp
+- Pages CMS config: .pages.yml
+- Setup guide: CMS-SETUP-TH.md
+- Edit articles at https://pagescms.org/ (GitHub account required). Every save triggers a GitHub commit and an automatic Netlify build.
