@@ -1,0 +1,36 @@
+media:
+  input: public/images
+  output: /images
+
+content:
+  - name: english-articles
+    label: English Articles
+    type: collection
+    path: src/content/articles/en
+    view:
+      fields: [title, date, category]
+    fields:
+      - {name: title, label: Title, type: string, required: true}
+      - {name: description, label: Summary, type: text, required: true}
+      - {name: date, label: Date, type: date, required: true}
+      - {name: lang, label: Language, type: string, default: en, hidden: true}
+      - {name: category, label: Category, type: string, default: Perspective}
+      - {name: readingTime, label: Reading time, type: string, default: '5 MIN READ'}
+      - {name: featured, label: Featured, type: boolean, default: false}
+      - {name: body, label: Article, type: rich-text}
+
+  - name: thai-articles
+    label: บทความภาษาไทย
+    type: collection
+    path: src/content/articles/th
+    view:
+      fields: [title, date, category]
+    fields:
+      - {name: title, label: ชื่อบทความ, type: string, required: true}
+      - {name: description, label: คำโปรย, type: text, required: true}
+      - {name: date, label: วันที่, type: date, required: true}
+      - {name: lang, label: Language, type: string, default: th, hidden: true}
+      - {name: category, label: หมวดหมู่, type: string, default: Perspective}
+      - {name: readingTime, label: เวลาอ่าน, type: string, default: '5 MIN READ'}
+      - {name: featured, label: บทความเด่น, type: boolean, default: false}
+      - {name: body, label: เนื้อหาบทความ, type: rich-text}
